@@ -1,0 +1,14 @@
+
+uploads
+static
+.vscode
+gcpStorageCredentials.json
+vscode*
+media-svc
+media-svc.exe
+media-svc.exe~
+openapi-svc
+gen/
+goa*
+__debug_bin
+.DS_Store
