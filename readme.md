@@ -24,3 +24,7 @@
 
 - Run swagger UI `docker run -p 8080:8080 -e SWAGGER_JSON=localhost:80/openapi.json swaggerapi/swagger-ui`
 
+## Upload image
+
+- Request with `form-data`, Key => `file`, Key type => `File`, value => upload image
+
