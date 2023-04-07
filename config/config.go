@@ -60,29 +60,29 @@ func (sc *ServerConfig) GetHost() string {
 
 // DefaultServerConfig instance
 var DefaultServerConfig = ServerConfig{
-	GetEnv("HOC_MEDIA_SVC_HOSTNAME", "0.0.0.0"),
-	GetEnv("HOC_MEDIA_SVC_PORT", "80"),
-	GetEnv("HOC_MEDIA_SVC_PROTOCOL", "http"),
+	GetEnv("A6_MEDIA_SVC_HOSTNAME", "0.0.0.0"),
+	GetEnv("A6_MEDIA_SVC_PORT", "80"),
+	GetEnv("A6_MEDIA_SVC_PROTOCOL", "http"),
 }
 
 // DefaultServiceConfig instance
 var DefaultServiceConfig = ServiceConfig{
-	GetEnv("HOC_MEDIA_SVC_STRATEGY", "local"),
-	GetEnv("HOC_MEDIA_SVC_STATIC_DIR", "static"),
-	GetEnv("HOC_MEDIA_SVC_UPLOADS_DIR", "uploads"),
-	GetEnv("HOC_MEDIA_SVC_BUCKET_NAME", "hoc-storage"),
-	GetEnv("HOC_MEDIA_SVC_PROJECT_ID", "angorasix-203314"),
-	GetEnv("HOC_MEDIA_SVC_STORAGE_API_HOST", "https://storage.googleapis.com"),
-	getEnvAsUint("HOC_MEDIA_SVC_THUMBNAIL_MAX_WIDTH", 800),
-	getEnvAsUint("HOC_MEDIA_SVC_THUMBNAIL_MAX_HEIGHT", 800),
+	GetEnv("A6_MEDIA_SVC_STRATEGY", "local"),
+	GetEnv("A6_MEDIA_SVC_STATIC_DIR", "static"),
+	GetEnv("A6_MEDIA_SVC_UPLOADS_DIR", "uploads"),
+	GetEnv("A6_MEDIA_SVC_BUCKET_NAME", "hoc-storage"),
+	GetEnv("A6_MEDIA_SVC_PROJECT_ID", "angorasix-203314"),
+	GetEnv("A6_MEDIA_SVC_STORAGE_API_HOST", "https://storage.googleapis.com"),
+	getEnvAsUint("A6_MEDIA_SVC_THUMBNAIL_MAX_WIDTH", 800),
+	getEnvAsUint("A6_MEDIA_SVC_THUMBNAIL_MAX_HEIGHT", 800),
 	// max size in bytes (B)
-	getEnvAsUint("HOC_MEDIA_SVC_THUMBNAIL_MAX_SIZE", 600000),
+	getEnvAsUint("A6_MEDIA_SVC_THUMBNAIL_MAX_SIZE", 600000),
 	// quality to create the thumbnail (0-100)
-	getEnvAsUint("HOC_MEDIA_SVC_THUMBNAIL_JPG_QUALITY", 90),
+	getEnvAsUint("A6_MEDIA_SVC_THUMBNAIL_JPG_QUALITY", 90),
 	// compression level:
 	// DefaultCompression (0)
 	// NoCompression (-1)
 	// BestSpeed (-2)
 	// BestCompression (-3)
-	getEnvAsInt("HOC_MEDIA_SVC_THUMBNAIL_PNG_COMPRESSION", 0),
+	getEnvAsInt("A6_MEDIA_SVC_THUMBNAIL_PNG_COMPRESSION", 0),
 }
