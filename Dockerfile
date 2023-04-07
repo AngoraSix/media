@@ -4,8 +4,11 @@ WORKDIR /go/src/angorasix.com/media
 COPY . .
 ARG BUILD
 ENV GO111MODULE=on
-RUN go get -u goa.design/goa/v3
-RUN go get -u goa.design/goa/v3/...
+# RUN go get -u goa.design/goa/v3
+# RUN go get -u goa.design/goa/v3/...
+RUN go install goa.design/goa/v3/cmd/goa@v3
+RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+RUN go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
 RUN goa gen angorasix.com/media/design
 RUN go get
 RUN CGO_ENABLED=0 GOOS=linux go build -o media-svc -ldflags "-X main.Build=$BUILD" cmd/main/*

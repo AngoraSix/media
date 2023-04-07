@@ -28,3 +28,7 @@
 
 - Request with `form-data`, Key => `file`, Key type => `File`, value => upload image
 
+## Retrieve image
+
+- Request e.g. `/static/uploads/2021122322421542_Screen Shot 2021-12-19 at 14.57.01.png`
+
