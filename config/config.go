@@ -70,7 +70,7 @@ var DefaultServiceConfig = ServiceConfig{
 	GetEnv("A6_MEDIA_SVC_STRATEGY", "local"),
 	GetEnv("A6_MEDIA_SVC_STATIC_DIR", "static"),
 	GetEnv("A6_MEDIA_SVC_UPLOADS_DIR", "uploads"),
-	GetEnv("A6_MEDIA_SVC_BUCKET_NAME", "hoc-storage"),
+	GetEnv("A6_MEDIA_SVC_BUCKET_NAME", "a6-storage"),
 	GetEnv("A6_MEDIA_SVC_PROJECT_ID", "angorasix-203314"),
 	GetEnv("A6_MEDIA_SVC_STORAGE_API_HOST", "https://storage.googleapis.com"),
 	getEnvAsUint("A6_MEDIA_SVC_THUMBNAIL_MAX_WIDTH", 800),

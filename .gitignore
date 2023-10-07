@@ -3,6 +3,7 @@ uploads
 static
 .vscode
 gcpStorageCredentials.json
+config/*.json
 vscode*
 media-svc
 media-svc.exe
