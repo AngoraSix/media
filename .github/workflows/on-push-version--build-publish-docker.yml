@@ -1,0 +1,18 @@
+name: Workflow executed when pushing git tag for a new version
+
+on:
+  push:
+    tags:
+      - v*.*.*
+
+jobs:
+  publish-docker-image:
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    uses: AngoraSix/infra/.github/workflows/action-push-gcp.yml@main
+    with:
+      app: media
+    secrets:
+      wif-provider: ${{ secrets.WIF_PROVIDER }}
+      wif-service-account: ${{ secrets.WIF_SERVICE_ACCOUNT }}
