@@ -28,5 +28,5 @@ var _ = Service("images", func() { // Resources group related API endpoints
 var _ = Service("static", func() { // Resources group related API endpoints
 	cors.Origin("*")
 
-	Files("/static/{*filepath}", "./static/")
+	Files("/static/uploads/{filename}", "./static/uploads")
 })
